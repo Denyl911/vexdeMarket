@@ -9,7 +9,7 @@
       </div>
 
       <!-- Rectángulo central -->
-      <div class="p-4 md:p-8 lg:p-12 xl:p-24 bg-gradient-to-b from-gray-700 via-neutral-900 to-blue-950 to-stone-900 rounded-xl mb-48 mt-10">
+      <div class="p-4 md:p-8 lg:p-12 xl:p-24 bg-gradient-to-b from-gray-700 via-neutral-900 to-blue-950 to-stone-900 rounded-xl mb-48 mt-8">
         <div class="text-white">
           <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 mr-2">Mi Carrito</h1>
             <div class="flex items-center mb-4 mt-4 text-green-500">
@@ -43,7 +43,7 @@
       </div>     
 
       <!-- Barra estática en la parte inferior -->
-      <div class="fixed bottom-0 w-full bg-gray-600 text-white px-10 py-2">
+      <div class="fixed bottom-0 bg-gray-600 text-white px-12 py-4 w-full">
         <div class="grid grid-cols-2 gap-8">
           <div class="text-left">
             <p class="text-base">Producto:</p>
@@ -56,13 +56,21 @@
             <p class="text-xl ml-auto font-bold" v-for="(buy, index) in buys" :key="index">{{ buy.Total }}</p>
           </div>       
         </div>
+
+        <div class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50" v-if="showCouponInput" @click="toggleCouponInput">
+    <div class="bg-white p-4 rounded-lg">
+      <input type="text" placeholder="Introduce tu cupón" class="border border-gray-300 p-2 rounded-md text-black" @click.stop>
+
+    </div>
+  </div>
         <div class="flex justify-start mt-4 mb-6"> 
-          <button class="flex text-emerald-200">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
-            </svg>
-            <span>Agregar cupón</span>
-          </button>
+          <button class="flex text-emerald-200" @click="toggleCouponInput">
+    <!-- Ícono del cupón -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+    </svg>
+    <span>Agregar cupón</span>
+  </button>
         </div>  
         <div class="flex justify-center mt-2">
           <button class="bg-green-500 px-4 py-2 rounded-xl w-full animate-bounce">Completar envío</button>
@@ -77,6 +85,7 @@
 export default {
   data() {
     return {
+      showCouponInput: false,
       //Productos destacados
       //Importante * para la descripción solamente se permiten 79 caracteres como maximo.
       products: [
@@ -102,6 +111,9 @@ export default {
       // Navegar a la otra página utilizando Vue Router
       this.$router.push('/');
     },
+    toggleCouponInput() {
+    this.showCouponInput = !this.showCouponInput;
+  }
   }
 };
 </script>
