@@ -46,24 +46,8 @@
   </div>-->
 
 
-
-      <h3 class="text-lg text-white font-bold mb-4 mt-4">Productos destacados</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">  
-        <!-- Productos -->        
-        <div v-for="(product, index) in products" :key="index" class="shadow-md w-auto h-auto">          
-          <button @click="Onproduct">                                 
-            <div class="flex flex-col items-center justify-center bg-white w-auto h-48 rounded-lg">
-                <img :src="product.img" alt="Img. Del producto" class="h-32 w-auto">
-            </div>
-            <div class="flex items-start h-20">
-                <div class="flex flex-col items-start mt-2">
-                    <p class="text-xs text-white text-left">{{ product.description }}</p>
-                    <p class="text-base text-rose-200 text-left">{{ product.price }}</p>  
-                </div>
-            </div>
-          </button>
-        </div>          
-      </div>
+      <ItemsProd/>
+      
     </div>
   </div>
 </template>

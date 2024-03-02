@@ -73,8 +73,10 @@
             </button>
         </div>
 
-
-
+        <div class="px-4">
+            <ItemsProd/>
+        </div>
+        
 
     </div>
   </template>
@@ -86,7 +88,6 @@
         showOverlay: false,
         selectedImage: null,
         currentIndex: 0, // Índice de la imagen actual
-
         categories: [
             { name: 'Puntos', imgen: '/_nuxt/assets/Categorias/puntos.png'},
             { name: 'Ofertas', imgen: '/_nuxt/assets/Categorias/ofertas.png'},

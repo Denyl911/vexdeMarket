@@ -9,7 +9,7 @@
       </div>
 
       <!-- Rectángulo central -->
-      <div class="p-4 md:p-8 lg:p-12 xl:p-24 bg-gradient-to-b from-gray-700 via-neutral-900 to-blue-950 to-stone-900 rounded-xl mb-48 mt-8">
+      <div class="p-2 md:p-2 lg:p-8 xl:p-12 bg-gradient-to-b from-gray-700 via-neutral-900 to-blue-950 to-stone-900 rounded-xl mb-48 mt-6">
         <div class="text-white">
           <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 mr-2">Mi Carrito</h1>
             <div class="flex items-center mb-4 mt-4 text-green-500">
@@ -23,13 +23,13 @@
             <button class="grid grid-cols-1">
               <div v-for="(product, index) in products" :key="index" class="shadow-md relative">
                 <!-- Icono de X -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute top-5 right-5 transform translate-x-1/2 -translate-y-1/2 w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute top-5 right-5 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 sm:w-8 sm:h-8 text-gray-500 hover:text-red-500 cursor-pointer">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
 
                 <!-- Contenido del botón -->
-                <div class="flex items-center justify-center bg-white py-4 md:py-6 lg:py-8 xl:py-10 px-4 md:px-6 lg:px-8 xl:px-10">
-                  <div class="flex items-center justify-center w-20">
+                <div class="flex items-center justify-center bg-white py-6 md:py-8 lg:py-10 xl:py-12 px-4 md:px-6 lg:px-8 xl:px-10">
+                  <div class="flex items-center justify-center w-24">
                     <img :src="product.img" alt="Img. Del producto" class="h-16 md:h-20 xl:h-24 w-auto">
                   </div>
                   <div class="ml-4 w-full text-right">
@@ -80,42 +80,41 @@
 </template>
 
 
-
 <script>
-export default {
-  data() {
-    return {
-      showCouponInput: false,
-      //Productos destacados
-      //Importante * para la descripción solamente se permiten 79 caracteres como maximo.
-      products: [
-        { description: 'Galletas goting en forma de estrella', price: '$10.00', img:'/_nuxt/assets/PruebaUno.png'},
-        { description: 'Bebida Going de 500ml _ energetizante', price: '$30.00', img:'/_nuxt/assets/drink.png'},
-        { description: 'Libreta con pasta de cuero de caballo', price: '$40.00', img:'/_nuxt/assets/libreta.png'},
-        { description: 'Mochila escolar femenina de 10 a 15 años', price: '$50.00', img:'_nuxt/assets/mochila.png'},
-        { description: 'Tenis rojos GOING talla 27 cm con suela de hule', price: '$60.00', img:'/_nuxt/assets/tenis.png'},
-        { description: 'Collar con dije en forma de corazón GOING', price: '$70.00', img:'/_nuxt/assets/collar.png'},
-        { description: 'Hamburguesa cheveRe sencilla de una sola pieza de carne', price: '$45.00', img:'/_nuxt/assets/hamburguesa.png'},
-        { description: '1 kilo de tortillas', price: '$12.00', img:'/_nuxt/assets/tortillas.png'},
-        { description: 'Tarro de michelada con o sin clamato y cerveza de su preferencia', price: '$40.00', img:'/_nuxt/assets/michelada.png'},
-      ],
-      
-      //Para terminar de realizar el pedido
-      buys: [
-        { Producto: '$357.00', Envio: 'Gratis', Total: '$357.00'},      
-      ],
-    };
-  },
-  methods: {
-    Back() {
-      // Navegar a la otra página utilizando Vue Router
-      this.$router.push('/');
+  export default {
+    data() {
+      return {
+        showCouponInput: false,
+        //Productos destacados
+        //Importante * para la descripción solamente se permiten 79 caracteres como maximo.
+        products: [
+          { description: 'Galletas goting en forma de estrella', price: '$10.00', img:'/_nuxt/assets/PruebaUno.png'},
+          { description: 'Bebida Going de 500ml _ energetizante', price: '$30.00', img:'/_nuxt/assets/drink.png'},
+          { description: 'Libreta con pasta de cuero de caballo', price: '$40.00', img:'/_nuxt/assets/libreta.png'},
+          { description: 'Mochila escolar femenina de 10 a 15 años', price: '$50.00', img:'_nuxt/assets/mochila.png'},
+          { description: 'Tenis rojos GOING talla 27 cm con suela de hule', price: '$60.00', img:'/_nuxt/assets/tenis.png'},
+          { description: 'Collar con dije en forma de corazón GOING', price: '$70.00', img:'/_nuxt/assets/collar.png'},
+          { description: 'Hamburguesa cheveRe sencilla de una sola pieza de carne', price: '$45.00', img:'/_nuxt/assets/hamburguesa.png'},
+          { description: '1 kilo de tortillas', price: '$12.00', img:'/_nuxt/assets/tortillas.png'},
+          { description: 'Tarro de michelada con o sin clamato y cerveza de su preferencia', price: '$40.00', img:'/_nuxt/assets/michelada.png'},
+        ],
+        
+        //Para terminar de realizar el pedido
+        buys: [
+          { Producto: '$357.00', Envio: 'Gratis', Total: '$357.00'},      
+        ],
+      };
     },
-    toggleCouponInput() {
-    this.showCouponInput = !this.showCouponInput;
-  }
-  }
-};
+    methods: {
+      Back() {
+        // Navegar a la otra página utilizando Vue Router
+        this.$router.push('/');
+      },
+      toggleCouponInput() {
+      this.showCouponInput = !this.showCouponInput;
+    }
+    }
+    };
 </script>
 
 <style>
