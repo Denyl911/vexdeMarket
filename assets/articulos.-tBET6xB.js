@@ -1,0 +1,1 @@
+import{_ as t,c,o,M as s,b as e}from"./entry.ex8Hv2zN.js";const n={},a=e("div",null," HOLA, SERÉ UNA NUEVA PÁGINA. ",-1),r=e("div",null," articulos ",-1);function _(l,i){return o(),c(s,null,[a,r],64)}const u=t(n,[["render",_]]);export{u as default};

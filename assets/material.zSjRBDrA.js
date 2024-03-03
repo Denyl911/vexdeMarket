@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as c,M as n,b as e}from"./entry.ex8Hv2zN.js";const o={},s=e("div",null," HOLA, SERÉ UNA NUEVA PÁGINA. ",-1),r=e("div",null," material ",-1);function _(l,i){return c(),a(n,null,[s,r],64)}const m=t(o,[["render",_]]);export{m as default};
