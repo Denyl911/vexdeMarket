@@ -22,6 +22,8 @@
     export default{
         data() {
             return{
+                //Productos destacados
+                //Importante * para la descripción solamente se permiten 79 caracteres como maximo.
                 products: [
                 { description: 'Galletas goting en forma de estrella', price: '$10.00', img:'/_nuxt/assets/PruebaUno.png'},
                 { description: 'Anillo brillante con 950 de plata de la marca GOING', price: '$20.00', img:'/_nuxt/assets/anillo.png'},

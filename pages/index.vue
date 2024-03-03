@@ -18,7 +18,7 @@
       <div class="overflow-x-auto">
         <div class="flex space-x-4">
           <!-- Categorias -->
-          <button v-for="(categorie, index) in categories" :key="index" class="flex flex-col items-center justify-center text-center">
+          <button v-for="(categorie, index) in categories" :key="index" class="flex flex-col items-center justify-center text-center" @click="navigateToCategory(categorie.dir)">
             <div class="flex items-center">
               <!-- Rectángulo con imagen a la izquierda y texto a la derecha -->              
               <div class="rounded-xl w-32 h-12 flex items-center justify-between px-2 bg-gradient-to-r from-gray-800 via-neutral-900 to-blue-950 to-stone-950">
@@ -56,38 +56,15 @@
   export default {
     data() {
       return {
-        //Productos destacados
-        //Importante * para la descripción solamente se permiten 79 caracteres como maximo.
-        products: [
-          { description: 'Galletas goting en forma de estrella', price: '$10.00', img:'/_nuxt/assets/PruebaUno.png'},
-          { description: 'Anillo brillante con 950 de plata de la marca GOING', price: '$20.00', img:'/_nuxt/assets/anillo.png'},
-          { description: 'Bebida Going de 500ml _ energetizante', price: '$30.00', img:'/_nuxt/assets/drink.png'},
-          { description: 'Libreta con pasta de cuero de caballo', price: '$40.00', img:'/_nuxt/assets/libreta.png'},
-          { description: 'Mochila escolar femenina de 10 a 15 años', price: '$50.00', img:'_nuxt/assets/mochila.png'},
-          { description: 'Tenis rojos GOING talla 27 cm con suela de hule', price: '$60.00', img:'/_nuxt/assets/tenis.png'},
-          { description: 'Collar con dije en forma de corazón GOING', price: '$70.00', img:'/_nuxt/assets/collar.png'},
-          { description: 'Logo en formato png de la empresa GOING', price: '$80.00', img:'/_nuxt/assets/LOGODOS.png'},
-          { description: 'Hamburguesa cheveRe sencilla de una sola pieza de carne', price: '$45.00', img:'/_nuxt/assets/hamburguesa.png'},
-          { description: '1 kilo de tortillas', price: '$12.00', img:'/_nuxt/assets/tortillas.png'},
-          { description: 'Tarro de michelada con o sin clamato y cerveza de su preferencia', price: '$40.00', img:'/_nuxt/assets/michelada.png'},
-          { description: 'Cubo rubik anti-estres de 3x3 de buena calidad', price: '$60.00', img:'/_nuxt/assets/cuborubik.png'},
-          { description: 'Agendar servicio de fletes y mudanzas', price: 'Cotizar', img:'/_nuxt/assets/fletes.png'},
-          { description: 'Carretilla truper para la construcción', price: '$430.00', img:'/_nuxt/assets/carretilla.png'},
-          { description: 'Curso de matemáticas para jovenes de 12 a 18 años de edad', price: 'Cotizar', img:'/_nuxt/assets/curso.png'},
-          { description: 'Agendar cita para la barbería la PELONA', price: 'Cotizar', img:'/_nuxt/assets/servicioBarber.png'},
-          { description: 'Oferta de trabajo para mesera en el restaurante QueCheve-Re', price: 'Ver oferta', img:'/_nuxt/assets/Solicitud.png'}
-
-          // Puedes agregar más productos aquí
-        ],
         categories: [
-          { name: 'Puntos', imgen: '/_nuxt/assets/Categorias/puntos.png'},
-          { name: 'Ofertas', imgen: '/_nuxt/assets/Categorias/ofertas.png'},
-          { name: 'Súper', imgen: '/_nuxt/assets/Categorias/super.png'},
-          { name: 'Moda', imgen: '/_nuxt/assets/Categorias/moda.jpeg'},
-          { name: 'Papeleria', imgen: '/_nuxt/assets/Categorias/papeleria.jpeg'},
-          { name: 'Artículos', imgen: '/_nuxt/assets/Categorias/articulos.jpeg'},
-          { name: 'Material', imgen: '/_nuxt/assets/Categorias/materiales.jpeg'},
-          { name: 'Servicios', imgen: '/_nuxt/assets/Categorias/servicios.jpeg'}                  
+          { name: 'Puntos', imgen: '/_nuxt/assets/Categorias/puntos.png', dir: 'puntos'},
+          { name: 'Ofertas', imgen: '/_nuxt/assets/Categorias/ofertas.png', dir: 'ofertas'},
+          { name: 'Súper', imgen: '/_nuxt/assets/Categorias/super.png', dir: 'super'},
+          { name: 'Moda', imgen: '/_nuxt/assets/Categorias/moda.jpeg', dir: 'moda'},
+          { name: 'Papeleria', imgen: '/_nuxt/assets/Categorias/papeleria.jpeg', dir: 'papeleria'},
+          { name: 'Artículos', imgen: '/_nuxt/assets/Categorias/articulos.jpeg', dir: 'articulos'},
+          { name: 'Material', imgen: '/_nuxt/assets/Categorias/materiales.jpeg', dir: 'material'},
+          { name: 'Servicios', imgen: '/_nuxt/assets/Categorias/servicios.jpeg', dir: 'servicios'}                  
         ]
       };    
     },
@@ -107,10 +84,10 @@
       toggleCarousel();
     },
     methods: {
-      Onproduct() {
-        // Navegar a la otra página utilizando Vue Router
-        this.$router.push('/products/product');
-      },
+      navigateToCategory(dir) {
+      // Navegar a la ruta correspondiente utilizando Vue Router
+      this.$router.push(`/categories/${dir}`);
+      }
     },
   };
 </script>
