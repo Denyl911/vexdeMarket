@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as s,M as c,b as e}from"./entry.PSKlgVX8.js";const n={},a=e("div",null," HOLA, SERÉ UNA NUEVA PÁGINA. ",-1),r=e("div",null," ofertas ",-1);function _(l,d){return s(),o(c,null,[a,r],64)}const i=t(n,[["render",_]]);export{i as default};

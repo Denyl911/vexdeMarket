@@ -1,0 +1,1 @@
+import{_ as o,c as t,o as c,M as n,b as e}from"./entry.PSKlgVX8.js";const s={},a=e("div",null," HOLA, SERÉ UNA NUEVA PÁGINA. ",-1),r=e("div",null," moda ",-1);function _(d,l){return c(),t(n,null,[a,r],64)}const m=o(s,[["render",_]]);export{m as default};
