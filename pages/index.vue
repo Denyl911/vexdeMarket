@@ -32,20 +32,6 @@
         </div>
       </div>
 
-      <!--<h2 class="text-lg text-white font-bold mt-2 mb-2">Ofertas</h2>
-      <div class="overflow-x-auto">
-    <div id="carousel" class="flex space-x-4">-->
-      <!-- Categorias -->
-      <!--<button v-for="(product, index) in categories" :key="index" class="p-0 rounded-lg flex items-center justify-start text-left carousel-item">
-        <div class="flex items-center bg-white rounded-lg p-2 w-72 h-24">
-          <img src="@/assets/carretilla.png" alt="Img. Del producto" class="h-10 w-10 rounded-lg mr-2">
-          <p class="text-sm text-black">{{ product.name }}</p>
-        </div>
-      </button>
-    </div>
-  </div>-->
-
-
       <ItemsProd/>
       
     </div>
@@ -57,36 +43,21 @@
     data() {
       return {
         categories: [
-          { name: 'Puntos', imgen: '/_nuxt/assets/Categorias/puntos.png', dir: 'puntos'},
-          { name: 'Ofertas', imgen: '/_nuxt/assets/Categorias/ofertas.png', dir: 'ofertas'},
-          { name: 'Súper', imgen: '/_nuxt/assets/Categorias/super.png', dir: 'super'},
-          { name: 'Moda', imgen: '/_nuxt/assets/Categorias/moda.jpeg', dir: 'moda'},
-          { name: 'Papeleria', imgen: '/_nuxt/assets/Categorias/papeleria.jpeg', dir: 'papeleria'},
-          { name: 'Artículos', imgen: '/_nuxt/assets/Categorias/articulos.jpeg', dir: 'articulos'},
-          { name: 'Material', imgen: '/_nuxt/assets/Categorias/materiales.jpeg', dir: 'material'},
-          { name: 'Servicios', imgen: '/_nuxt/assets/Categorias/servicios.jpeg', dir: 'servicios'}                  
+          { name: 'Puntos', imgen: '@/assets/Categorias/puntos.png', dir: 'puntos'},
+          { name: 'Ofertas', imgen: '@/assets/Categorias/ofertas.png', dir: 'ofertas'},
+          { name: 'Súper', imgen: '@/assets/Categorias/super.png', dir: 'super'},
+          { name: 'Moda', imgen: '@/assets/Categorias/moda.jpeg', dir: 'moda'},
+          { name: 'Papeleria', imgen: '@/assets/Categorias/papeleria.jpeg', dir: 'papeleria'},
+          { name: 'Artículos', imgen: '@/assets/Categorias/articulos.jpeg', dir: 'articulos'},
+          { name: 'Material', imgen: '@/assets/Categorias/materiales.jpeg', dir: 'material'},
+          { name: 'Servicios', imgen: '@/assets/Categorias/servicios.jpeg', dir: 'servicios'}                  
         ]
       };    
     },
-    mounted() {
-      let carouselItems = document.querySelectorAll('.carousel-item');
-
-      function toggleCarousel() {
-        let activeItemIndex = 0;
-
-        setInterval(function() {
-          carouselItems[activeItemIndex].classList.remove('carousel-item');
-          activeItemIndex = (activeItemIndex + 1) % carouselItems.length;
-          carouselItems[activeItemIndex].classList.add('carousel-item');
-        }, 5000); // Cambia este valor para ajustar la velocidad de movimiento
-      }
-
-      toggleCarousel();
-    },
     methods: {
       navigateToCategory(dir) {
-      // Navegar a la ruta correspondiente utilizando Vue Router
-      this.$router.push(`/categories/${dir}`);
+        // Navegar a la ruta correspondiente utilizando Vue Router
+        this.$router.push(`/categories/${dir}`);
       }
     },
   };
@@ -95,18 +66,5 @@
 <style>
   .text-xxs {
     font-size: 0.5rem; /* Puedes ajustar el valor según tus necesidades */
-  }
-
-  @keyframes moveRight {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  .carousel-item {
-    animation: moveRight 10s linear infinite;
   }
 </style>

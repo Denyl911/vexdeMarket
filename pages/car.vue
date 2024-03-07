@@ -1,12 +1,12 @@
 <template>
     <div class="flex justify-center items-center bg-gradient-to-b from-gray-800 via-neutral-900 to-blue-950 to-stone-950 text-white p-8">
-      <div class="fixed top-0 left-0">
+      <!--<div class="fixed top-0 left-0">
         <button class="mt-4 ml-2" @click="Back">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
             <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
         </button>
-      </div>
+      </div>-->
 
       <!-- Rectángulo central -->
       <div class="p-2 md:p-2 lg:p-8 xl:p-12 bg-gradient-to-b from-gray-700 via-neutral-900 to-blue-950 to-stone-900 rounded-xl mb-48 mt-6">
@@ -59,8 +59,8 @@
         
         <!-- Input para ingresar cupón -->
         <div class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50" v-if="showCouponInput" @click="toggleCouponInput">
-          <div class="bg-white p-4 rounded-lg flex flex-col items-center justify-center w-72 h-40 sm:w-96 sm:h-64">
-            <input type="text" placeholder="Introduce tu cupón" class="border border-gray-300 p-2 rounded-md text-black w-56 h-24 sm:w-72 sm:h-20" @click.stop>      
+          <div class="bg-white p-4 rounded-lg flex flex-col items-center justify-center w-72 h-32 sm:w-96 sm:h-48" :class="{ 'moved-up': inputClicked }">
+            <input type="text" placeholder="Introduce tu cupón" class="border border-gray-300 p-2 rounded-md text-black w-56 h-24 sm:w-72 sm:h-20" @click.stop="moveComponentUp">      
             <button class="flex items-center justify-center bg-green-500 text-black mt-2 rounded-xl mt-8 w-20 h-10">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -90,6 +90,7 @@
     data() {
       return {
         showCouponInput: false,
+        inputClicked: false,
         //Productos destacados
         //Importante * para la descripción solamente se permiten 79 caracteres como maximo.
         products: [
@@ -116,10 +117,14 @@
         this.$router.push('/');
       },
       toggleCouponInput() {
-      this.showCouponInput = !this.showCouponInput;
+        this.showCouponInput = !this.showCouponInput;
+        this.inputClicked = false;
+      },
+      moveComponentUp() {
+        this.inputClicked = true;
+      }      
     }
-    }
-    };
+  };
 </script>
 
 <style>
@@ -137,5 +142,9 @@
 
   .animate-slide {
     animation: slide 2s infinite;
+  }
+
+  .moved-up {
+    transform: translateY(-80px);
   }
 </style>
