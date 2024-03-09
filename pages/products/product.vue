@@ -89,14 +89,14 @@
         selectedImage: null,
         currentIndex: 0, // Índice de la imagen actual
         categories: [
-            { name: 'Puntos', imgen: '/_nuxt/assets/Categorias/puntos.png'},
-            { name: 'Ofertas', imgen: '/_nuxt/assets/Categorias/ofertas.png'},
-            { name: 'Súper', imgen: '/_nuxt/assets/Categorias/super.png'},
-            { name: 'Moda', imgen: '/_nuxt/assets/Categorias/moda.jpeg'},
-            { name: 'Papeleria', imgen: '/_nuxt/assets/Categorias/papeleria.jpeg'},
-            { name: 'Artículos', imgen: '/_nuxt/assets/Categorias/articulos.jpeg'},
-            { name: 'Material', imgen: '/_nuxt/assets/Categorias/materiales.jpeg'},
-            { name: 'Servicios', imgen: '/_nuxt/assets/Categorias/servicios.jpeg'}                  
+            { name: 'Puntos', imgen: '/vexdeMarket/assets/assets/Categorias/puntos.png'},
+            { name: 'Ofertas', imgen: '/vexdeMarket/assets/assets/Categorias/ofertas.png'},
+            { name: 'Súper', imgen: '/vexdeMarket/assets/assets/Categorias/super.png'},
+            { name: 'Moda', imgen: '/vexdeMarket/assets/assets/Categorias/moda.png'},
+            { name: 'Papeleria', imgen: '/vexdeMarket/assets/assets/Categorias/papeleria.png'},
+            { name: 'Artículos', imgen: '/vexdeMarket/assets/assets/Categorias/articulos.png'},
+            { name: 'Material', imgen: '/vexdeMarket/assets/assets/Categorias/materiales.png'},
+            { name: 'Servicios', imgen: '/vexdeMarket/assets/assets/Categorias/servicios.png'}                  
         ],
       }
     },

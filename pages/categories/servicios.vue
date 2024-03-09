@@ -4,7 +4,7 @@
       <img src="@/assets/Categorias/servicios.png" alt="Logo empresa" class="w-auto h-20 sm:w-auto sm:h-40 mr-4 rounded-full">
       <h1 class="text-white">
         <span class="block font-bold text-xl sm:text-4xl">SERVICIOS</span>
-        <span class="block text-sm sm:text-xl mt-1">¡Lleva una vida más tranquila, no te estreses!</span>
+        <span class="block text-sm sm:text-xl mt-1">¡Lleva una vida más tranquila!</span>
       </h1>
     </div>
     <div>

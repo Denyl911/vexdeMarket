@@ -14,5 +14,7 @@
           puntos
       </div>
       
+      <ItemsProd/>
+
     </div>
 </template>

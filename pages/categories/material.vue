@@ -4,7 +4,7 @@
       <img src="@/assets/Categorias/materiales.png" alt="Logo empresa" class="w-auto h-20 sm:w-auto sm:h-40 mr-4">
       <h1 class="text-white">
         <span class="block font-bold text-xl sm:text-4xl">MATERIAL</span>
-        <span class="block text-sm sm:text-xl mt-1">¡Repara y construye todo lo que te imaginas!</span>
+        <span class="block text-sm sm:text-xl mt-1">¡Repara y construye todo lo imposible!</span>
       </h1>
     </div>
     <div>
