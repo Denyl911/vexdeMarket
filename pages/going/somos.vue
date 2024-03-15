@@ -29,9 +29,45 @@
         <div class="text-container text-white">
             El objetivo final es que las empresas asociadas mantengan o incluso reduzcan sus precios, brindando a los clientes la oportunidad de ahorrar en sus compras. Se ofrecerán cupones de descuento, promociones especiales y envío gratuito siempre que la ubicación se encuentre dentro de los puntos de operación de la empresa. Con estas medidas, GOING aspira a transformar la experiencia de compra tanto para negocios como para consumidores, impulsando un ecosistema económico más inclusivo y próspero.
         </div>
+
+        <div class="p-4 sm:p-16 w-auto h-auto">
+            <div class="bg-white p-4 w-auto h-auto rounded-xl">
+                <div>
+                    Contacto directo con GOING
+                    <div class="flex items-center text-black text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-4 mr-4 border-b border-blue-500 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 ml-4">
+                            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                        </svg>
+                        <span class="text-x1 ml-4">PERFIL</span>
+                    </div>
+                    <div class="flex items-center text-black text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-4 mr-4 border-b border-blue-500 rounded-xl">
+                        <div class="flex items-center justify-center rounded-full bg-black text-white w-6 h-6 ml-4 facebook-f">
+                            F
+                        </div>                    
+                        <span class="text-x1 ml-4">PERFIL</span>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    Contacto directo con VEXDE LABS
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRttWPVQqLkVqVZcWkXfgSmMjQssgNkkkFVLVKscvhrpWwznxhsmksVxBmSTqqfLHjMLVHb" target="_blank" class="flex items-center text-black text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-4 mr-4 border-b border-blue-500 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 ml-4">
+                            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                        </svg>
+                        <span class="text-x1 ml-4">vexdelabs@gmail.com</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61555719097614" target="_blank" class="flex items-center text-black text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-4 mr-4 border-b border-blue-500 rounded-xl">
+                        <div class="flex items-center justify-center rounded-full bg-black text-white w-6 h-6 ml-4 facebook-f">
+                            F
+                        </div>                    
+                        <span class="text-x1 ml-4">VEXDE LABS</span>
+                    </a>
+                </div>
+            </div>             
+        </div>
     </div>
 </template>
-
 
 <style>
     .text-container {
@@ -43,5 +79,8 @@
         margin: 0 auto; /* Centrar horizontalmente */
         max-width: 800px; /* Ancho máximo del contenedor */
         padding: 20px; /* Espaciado interno */
+    }
+    .facebook-f {
+        font-family: 'Montserrat', sans-serif; /* O la fuente que elijas */
     }
 </style>

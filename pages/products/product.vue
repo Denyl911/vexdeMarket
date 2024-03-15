@@ -73,11 +73,26 @@
             </button>
         </div>
 
+        <div class="px-4 text-white">
+            <div class="flex justify-between">
+                <button class="bg-gradient-to-b from-gray-800 via-neutral-800 to-blue-950 rounded-xl h-10 w-full mr-2">
+                    Agregar al carrito
+                </button>
+                <button class="bg-gradient-to-b from-gray-800 via-neutral-800 to-blue-950 rounded-xl h-10 w-32">
+                    ...
+                </button>
+            </div>
+            <div>
+                <button class="bg-gradient-to-b from-gray-800 via-neutral-800 to-blue-950 rounded-xl h-10 w-full mt-4 mb-4">
+                    Comprar ahora
+                </button>                
+            </div>
+        </div>
+
         <div class="px-4">
             <ItemsProd/>
         </div>
         
-
     </div>
   </template>
   
