@@ -41,65 +41,72 @@
     <div class="min-h-screen w-56 fixed top-0 left-0 bg-gradient-to-r from-neutral-900 via-teal-900 to-emerald-800">
       <div>
           <!-- Ícono cierre -->
-          <button @click="closeMenu" v-if="showMenu" class="mt-4 ml-2 text-white">                               
+          <button @click="closeMenu" v-if="showMenu" class="mt-5 ml-2 text-white">                               
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </button>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-4 mr-4 border-b border-blue-500 rounded-xl" @click="ToPerfil">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="w-12 h-12 mr-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 ml-4 mr-4 border-b border-blue-500 rounded-xl" @click="ToPerfil">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 mr-2">
+                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clip-rule="evenodd" />
               </svg>
+
               <span class="text-x1">PERFIL</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToQuieroComprar">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToQuieroComprar">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
               </svg>
               <span class="text-x1 ml-6">Quiero comprar</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToMisCompras">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToMisCompras">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
               </svg>
               <span class="text-x1 ml-6">Mis compras</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToFavoritos">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToFavoritos">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
               </svg>
               <span class="text-x1 ml-6">Favoritos</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToCategorys">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToCategorys">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
               </svg>
               <span class="text-x1 ml-6">Categorías</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToOfertas">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToOfertas">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
               </svg>
               <span class="text-x1 ml-6">Ofertas</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToSoyVendedor">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToSoyVendedor">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
               </svg>
               <span class="text-x1 ml-6">Soy vendedor</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToSoyRepartidor">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToSoyRepartidor">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
               </svg>
               <span class="text-x1 ml-6">Soy repartidor</span>
             </div>
-            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-2 mt-1 ml-6 mr-4 rounded-xl" @click="ToGoing">
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToGoing">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
               </svg>
               <span class="text-x1 ml-6">¿GOING?</span>
+            </div>
+            <div class="flex items-center text-white text-x1 hover:bg-orange-400 cursor-pointer py-3 mb-1 mt-1 ml-6 mr-4 rounded-xl" @click="ToChat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+              </svg>
+              <span class="text-x1 ml-6">Chat</span>
             </div>
         </div>
       </div>
@@ -122,45 +129,38 @@ export default {
     closeMenu() {
       this.showMenu = false;
     },
-    navigateToPage() {
-      // Navegar a la otra página utilizando Vue Router
+    navigateToPage() {      
       this.$router.push('/car');
     },
-    ToPerfil() {
-      // Navegar a la otra página utilizando Vue Router
+    ToPerfil() {      
       this.$router.push('/itemBar/Perfil');
     },
-    ToQuieroComprar() {
-      // Navegar a la otra página utilizando Vue Router
+    ToQuieroComprar() {      
       this.$router.push('/itemBar/QuieroComprar');
     },
-    ToMisCompras() {
-      // Navegar a la otra página utilizando Vue Router
+    ToMisCompras() {      
       this.$router.push('/itemBar/MisCompras');
     },
-    ToFavoritos() {
-      // Navegar a la otra página utilizando Vue Router
+    ToFavoritos() {      
       this.$router.push('/itemBar/Favoritos');
     },
-    ToCategorys() {
-      // Navegar a la otra página utilizando Vue Router
+    ToCategorys() {      
       this.$router.push('/categories/categoryM');
     },
-    ToOfertas() {
-      // Navegar a la otra página utilizando Vue Router
+    ToOfertas() {      
       this.$router.push('/itemBar/Ofertas');
     },
-    ToSoyVendedor() {
-      // Navegar a la otra página utilizando Vue Router
+    ToSoyVendedor() {      
       this.$router.push('/itemBar/SoyVendedor');
     },
-    ToSoyRepartidor() {
-      // Navegar a la otra página utilizando Vue Router
+    ToSoyRepartidor() {      
       this.$router.push('/itemBar/SoyRepartidor');
     },
-    ToGoing() {
-      // Navegar a la otra página utilizando Vue Router
+    ToGoing() {      
       this.$router.push('/going/somos');
+    },
+    ToChat() {      
+      this.$router.push('/itemBar/chat');
     }
   }
 }
