@@ -1,1 +1,0 @@
-import{_ as c,c as e,o as t}from"./entry.zmjTelKa.js";const o={},s={class:"bg-black w-full h-full text-white"};function a(n,r){return t(),e("div",s," EY, CHAT, HI! ")}const l=c(o,[["render",a]]);export{l as default};
