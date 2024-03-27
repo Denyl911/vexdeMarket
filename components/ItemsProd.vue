@@ -5,7 +5,7 @@
         <div v-for="(product, index) in products" :key="index" class="shadow-md w-auto h-auto">          
           <button @click="Onproduct">                                 
             <div class="flex flex-col items-center justify-center bg-white w-auto h-48 rounded-lg">
-                <img :src="product.img" alt="Img. Del producto" class="h-32 w-auto">
+                <img :src="product.img" alt="Img. Del producto" class="h-48 w-auto rounded-lg">
             </div>
             <div class="flex items-start h-20">
                 <div class="flex flex-col items-start mt-2">

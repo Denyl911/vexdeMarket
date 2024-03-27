@@ -50,15 +50,15 @@
             <h3 class="text-lg font-semibold mb-2">Tarjeta Bancaria</h3>
             <div class="bg-gradient-to-b from-black to-cyan-950 text-white p-2 rounded-md relative">
                 <div class="p-4">
-                    <img src="@/assets/tarjetaBancaria/chip.png" alt="Logo empresa" class="px-2 h-4 w-auto mb-2">
-                    <input type="text" id="numTarjeta" v-model="tarjeta.numTarjeta" class="px-2 w-full bg-transparent text-xl text-center" placeholder="XXXX  XXXX  XXXX  XXXX">
-                    <input type="text" id="titular" v-model="tarjeta.titular" class="px-2 w-32 bg-transparent text-xs mt-2" placeholder="Eduardo Cruz Perez">                                
+                    <img src="@/assets/tarjetaBancaria/chip.png" alt="Chip" class="px-2 h-4 w-auto mb-2">
+                    <input type="text" id="numTarjeta" @input="formatoTarjeta" v-model="tarjeta.numTarjeta" class="px-2 w-full bg-transparent text-xl text-center" placeholder="XXXX  XXXX  XXXX  XXXX" maxlength="22" minlength="22" inputmode="numeric">
+                    <input type="text" id="titular" v-model="tarjeta.titular" class="px-2 w-full bg-transparent text-xs mt-2" placeholder="Eduardo Cruz Perez">                                
                     <div class="flex justify-between mt-1">
                         <div class="w-1/2">
-                            <input type="text" id="fechaC" v-model="tarjeta.fechaC" class="p-2 w-16 bg-transparent text-xs" placeholder="MM/AA">
+                            <input type="text" id="fechaC" @input="formatoFecha" v-model="tarjeta.fechaC" class="p-2 w-16 bg-transparent text-xs" placeholder="MM/AA" maxlength="5" minlength="5" inputmode="numeric">
                         </div>
                         <div class="w-1/2">
-                            <input type="text" id="Cvv" v-model="tarjeta.Cvv" class="p-2 w-16 bg-transparent text-xs" placeholder="CVV">
+                            <input type="text" id="Cvv" v-model="tarjeta.Cvv" class="p-2 w-16 bg-transparent text-xs" placeholder="CVV" maxlength="3" minlength="3" inputmode="numeric" pattern="[0-9]*">
                         </div>
                         <select id="VisaMaster" v-model="tarjeta.Vm" class="w-1/2 p-2 w-32 bg-transparent text-xs text-right">
                             <option value="visa" class="text-black">VISA</option>
@@ -112,16 +112,28 @@
         },
         methods: {
             submitForm() {
-                // Lógica para enviar el formulario
+              // Lógica para enviar el formulario
             },
             agregarTarjeta() {
-                this.mostrarTarjeta = true;
+              this.mostrarTarjeta = true;
             },
             adjustHeight(event) {
-            const textarea = event.target;
-            textarea.style.height = "auto";
-            textarea.style.height = (textarea.scrollHeight) + "px";
+              const textarea = event.target;
+              textarea.style.height = "auto";
+              textarea.style.height = (textarea.scrollHeight) + "px";
+            },
+            formatoTarjeta() {
+              let valor = this.tarjeta.numTarjeta.replace(/\s/g, ''); // Elimina todos los espacios en blanco
+              valor = valor.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1  ').trim(); // Agrega un espacio cada cuatro caracteres
+              this.tarjeta.numTarjeta = valor;
+            },
+            formatoFecha() {            
+              let valor = this.tarjeta.fechaC.replace(/\D/g, ''); // Eliminar todos los caracteres que no sean dígitos                            
+              if (valor.length > 2) {
+                valor = valor.slice(0, 2) + '/' + valor.slice(2); // Insertar "/" después de los primeros dos dígitos
+              }              
+              this.tarjeta.fechaC = valor; // Actualizar el valor del input
             }
-        }
-    };
+        },
+    };    
   </script>

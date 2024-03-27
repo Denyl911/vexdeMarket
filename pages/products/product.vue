@@ -6,22 +6,22 @@
                 <img src="@/assets/LOGODOS.png" alt="Imagen del negocio" class="h-6 w-8 rounded-full">
                 <h1 class="text-green-500 text-xs font-light ml-2">Nombre del negocio</h1>
             </button>
-                <h2 class="text-green-500 text-lg font-semibold flex">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                </svg>
+                <h2 class="text-green-500 text-lg font-semibold flex mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                    </svg>
                 </h2>
         </div>      
         <div class="px-4 py-2">
@@ -54,8 +54,9 @@
             <button class="close-btn" @click="hideImage">&times;</button>
         </div>
 
+        <h6 class="text-white text-3xl sm:text-6xl p-4">$ 237.44</h6>
         <!-- Para el icono de favoritos y compartir-->
-        <div class="text-green-500 flex justify-between p-8">
+        <div class="text-green-500 flex justify-between px-8 py-8 sm:py-14">
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 sm:w-16 sm:h-16">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -66,7 +67,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
                 </svg>
             </button>
-            <button>
+            <button @click="toggleOptions">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 sm:w-16 sm:h-16">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
@@ -78,9 +79,55 @@
             </button>
         </div>
 
-        <div class="px-4 text-white">
-            <button class="bg-blue-950 rounded-xl h-10 w-full mr-2">
-                Comprar ahora
+        <!-- Opcions para elegir precio -->
+        <div class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50" v-if="showCouponInput" @click="toggleOptions">
+          <div class="bg-gray-950 p-4 rounded-lg flex flex-col items-center justify-center w-72 h-auto sm:w-96 sm:h-auto" :class="{ 'moved-up': inputClicked }">
+            <p class="text-white">Elija el precio que mejor se adapte a su presupuesto:</p>              
+            <button class="flex items-center justify-center bg-green-500 text-black rounded-xl mt-6 w-40 h-10 font-bold">
+                $ 235.00
+            </button>
+            <button class="flex items-center justify-center bg-green-500 text-black rounded-xl mt-4 w-40 h-10 font-bold">
+                $ 237.44
+            </button>
+            <button class="flex items-center justify-center bg-green-500 text-black rounded-xl mt-4 w-40 h-10 font-bold">
+                $ 240.00
+            </button>
+          </div>
+        </div>
+        
+        <div class="text-white px-6 flex justify-between">
+            <h7>
+                <span class="font-bold text-lg sm:text-3xl">Envío: </span>
+                <span class="text-green-500 text-lg sm:text-3xl">¡Gratis!</span>            
+            </h7>
+            <h8>
+                <span class="font-bold text-right text-lg sm:text-3xl">Stock: </span>
+                <span class="text-right text-green-500 text-lg sm:text-3xl">8895</span>
+            </h8>
+        </div>
+
+        <div class="px-4 py-4 text-white flex justify-between">
+            <div class="bg-gray-600/60 px-4 flex items-center justify-between text-lg rounded-xl h-12 w-full mr-2 mb-4 font-thin">
+                <span>Cantidad: 1</span>
+
+                <div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <button class="ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                        </svg>
+                    </button>   
+                </div>             
+            </div>
+        </div>
+
+        <div class="px-4 py-4 text-white">            
+            <button class="bg-sky-900 text-lg rounded-xl h-12 w-full mr-2 font-bold">
+                COMPRAR AHORA
             </button>
             <button class="bg-sky-950 rounded-xl h-10 w-full mt-4 mb-4">
                 Agregar al carrito
@@ -98,6 +145,8 @@
   export default {
     data() {
       return {
+        showCouponInput: false,
+        inputClicked: false,
         showOverlay: false,
         selectedImage: null,
         currentIndex: 0, // Índice de la imagen actual
@@ -114,23 +163,27 @@
       }
     },
     methods: {
-        showImage(imageUrl, index) {
-            this.selectedImage = imageUrl;
-            this.showOverlay = true;
-            this.currentIndex = index; // Al hacer clic en una imagen, actualiza el índice actual
-        },
-        hideImage() {
-            this.showOverlay = false;
-            this.selectedImage = null;
-        },
-        prevImage() {
-            this.currentIndex = (this.currentIndex - 1 + this.categories.length) % this.categories.length;
-            this.selectedImage = this.categories[this.currentIndex].imgen;
-        },
-        nextImage() {
-            this.currentIndex = (this.currentIndex + 1) % this.categories.length;
-            this.selectedImage = this.categories[this.currentIndex].imgen;
-        }
+            showImage(imageUrl, index) {
+                this.selectedImage = imageUrl;
+                this.showOverlay = true;
+                this.currentIndex = index; // Al hacer clic en una imagen, actualiza el índice actual
+            },
+            hideImage() {
+                this.showOverlay = false;
+                this.selectedImage = null;
+            },
+            prevImage() {
+                this.currentIndex = (this.currentIndex - 1 + this.categories.length) % this.categories.length;
+                this.selectedImage = this.categories[this.currentIndex].imgen;
+            },
+            nextImage() {
+                this.currentIndex = (this.currentIndex + 1) % this.categories.length;
+                this.selectedImage = this.categories[this.currentIndex].imgen;
+            },
+            toggleOptions() {
+                this.showCouponInput = !this.showCouponInput;
+                this.inputClicked = false;
+            },  
         }
     };
 </script>

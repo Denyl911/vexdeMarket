@@ -7,14 +7,17 @@
           <span class="block text-sm sm:text-xl mt-1">¡GOING está contigo!</span>
         </h1>
       </div>
-      <div class="text-white">
-          HOLA, SERÉ UNA NUEVA PÁGINA.
-      </div>
-      <div class="text-white">
-          puntos
+
+      <div class="px-4">
+        <div class="text-white rounded-xl bg-green-800 mt-8 mb-6 p-2 h-24">
+          Puntos obtenidos: 8
+        </div>
       </div>
       
-      <ItemsProd/>
+      
+      <div class="px-4">
+        <ItemsProd/>
+      </div>
 
     </div>
 </template>
